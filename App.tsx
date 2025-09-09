@@ -13,7 +13,7 @@ const App = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [color, setColor] = useState('#00ff00');
   const [backgroundColor, setBackgroundColor] = useState('#000000')
-  const [size, setSize] =useState(360)
+  const [size, setSize] =useState(340)
   const [settingsPage, setSettingsPage] = useState(false);
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const App = () => {
             <Text style={[styles.lable, { color: color }]}>Рамер на шрифта:</Text>
             <TextInput
               value={size.toString()}
-              onChangeText={(t)=>setSize(parseInt(t,10))}
+              onChangeText={(t)=>setSize(parseInt(t))}
               style={[styles.inputBox]}
             />
             <TouchableOpacity onPress={() => setSettingsPage(false)}>
