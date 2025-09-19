@@ -58,7 +58,7 @@ const App = () => {
             <Text style={[styles.lable, { color: color, marginTop: 20  }]}>Font Size:</Text>
             <TextInput
               value={size.toString()}
-              onChangeText={(t)=>setSize(parseInt(t,10))}
+              onChangeText={(t)=>setSize(parseInt(t))}
               style={[styles.inputBox]}
             />
             <Text style={[styles.lable, { color: color, marginTop: 20 }]}>
