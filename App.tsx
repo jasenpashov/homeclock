@@ -17,7 +17,7 @@ const App = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [color, setColor] = useState('#00ff00');
   const [backgroundColor, setBackgroundColor] = useState('#000000')
-  const [size, setSize] = useState(360)
+  const [size, setSize] =useState(360)
   const [settingsPage, setSettingsPage] = useState(false);
   const [myFont, setFont] = useState(Font1);
 
@@ -58,7 +58,7 @@ const App = () => {
             <Text style={[styles.lable, { color: color, marginTop: 20  }]}>Font Size:</Text>
             <TextInput
               value={size.toString()}
-              onChangeText={(t) => setSize(parseInt(t, 10))}
+              onChangeText={(t)=>setSize(parseInt(t,10))}
               style={[styles.inputBox]}
             />
             <Text style={[styles.lable, { color: color, marginTop: 20 }]}>
